@@ -3,13 +3,14 @@ from bs4 import BeautifulSoup
 import math
 import time
 import NYTPage
+import config 
 
 global errors
 errors = []
 
 def get_data(phrase, datastore=[], startyear=2016, endyear=2016):
     
-    key = "9bf7c9114f214ff69fa9b4d721982c24"
+    key = config.nyt_key
     source = "The%20New%20York%20Times"
     
     # months = list(range(1, 13))
