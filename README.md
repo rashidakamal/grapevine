@@ -4,7 +4,7 @@ Grapevine seeks to examine the use of anonymous sourcing in the news. The projec
 
 So far, I've implemented a Chrome extension that "blacks out" chunks of text referencing anonymous sources and then highlights the text if the user hovers over the redaction. The aesthetic borrows from the FOIA art produced on the regular by U.S. government agencies. It's not yet available in the Chrome Web Store, but it is available here. 
 
-![in action](/images/grapevine.gif)
+<img align="center" src="images/grapevine.gif">
 
 Ultimately, I'd like this project to include data about anonymous sourcing across as many news sites as possible. I'm thinking some sort of scraper + elasticsearch combo? 
 
