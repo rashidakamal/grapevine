@@ -34,7 +34,8 @@ def get_data(phrase, datastore=[], startyear=2016, endyear=2016):
     print("need to scrape", pages, "pages")
     print("__"*10)
 
-    for p in range(0,pages):        
+    # for p in range(0,pages):     
+    for p in range(0,3):    
 
         api_url = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q=%22"+ str(phrase) + "%22&api-key=" + key + "&fq=source:('" + source + "')" + "&begin_date=" + str(startyear) + str(start_month) + "&end_date=" + str(endyear) + str(end_month) + "&page=" + str(p)
 
@@ -78,7 +79,7 @@ def get_data(phrase, datastore=[], startyear=2016, endyear=2016):
             
         time.sleep(0.5)
         
-    return errors
+    return datastore, errors
 
 
 
